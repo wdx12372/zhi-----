@@ -13,6 +13,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
     "axios": "^1.6.2",
+    "base64url": "^3.0.1",
     "element-plus": "^2.9.5",
     "opus-recorder": "^8.0.5",
     "pinia": "^2.1.6",
