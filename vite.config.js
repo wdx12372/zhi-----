@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
 export default defineConfig({
+  base: '/', // 确保这里是正确的路径
   plugins: [vue()],
   resolve: {
     alias: {
@@ -10,6 +11,7 @@ export default defineConfig({
     }
   },
   server: {
+    // 代理配置仅在开发环境有效
     proxy: {
       '/api': {
         target: 'http://bot.michaeltan.org/v1',
@@ -23,4 +25,4 @@ export default defineConfig({
       }
     }
   }
-}) 
+})
